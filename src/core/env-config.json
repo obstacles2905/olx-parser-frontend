@@ -1,0 +1,6 @@
+{
+    "environment": "local",
+    "uiPort": 3001,
+    "apiPort": 4001,
+    "apiUrl": "http://localhost:8080/"
+}

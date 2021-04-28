@@ -1,14 +1,13 @@
 import React, { lazy, Suspense } from 'react';
 import './App.scss';
-
-const OtherComponent = lazy(() => import('./OtherComponent'));
+import OffersComponent from './OffersComponent';
 
 function App() {
   return (
     <div>
       <div className="welcome">
         <p>
-          Welcome to Ozone World for{' '}
+          Welcome to Olx Parser {' '}
           <span style={{ color: '#61dafb' }}> New react hooks!</span>
           <br />
           Clean Code for Rapid Development
@@ -20,9 +19,8 @@ function App() {
           To get started, edit: <pre>src/App.js</pre>
         </div>
         <div>
-          <Suspense fallback={<div>Loading...</div>}>
-            <OtherComponent />
-          </Suspense>
+          <Suspense fallback={<div>Loading...</div>} />
+          <OffersComponent />
         </div>
       </div>
 

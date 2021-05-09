@@ -6,17 +6,10 @@ function App() {
   return (
     <div>
       <div className="welcome">
-        <p>
+        <p className="title">
           Welcome to Olx Parser {' '}
-          <span style={{ color: '#61dafb' }}> New react hooks!</span>
-          <br />
-          Clean Code for Rapid Development
         </p>
         <div className="content">
-          Built in <div id="heart" /> with React
-        </div>
-        <div>
-          To get started, edit: <pre>src/App.js</pre>
         </div>
         <div>
           <Suspense fallback={<div>Loading...</div>} />
